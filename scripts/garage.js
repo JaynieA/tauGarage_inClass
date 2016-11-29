@@ -20,6 +20,14 @@ $( document ).ready( function(){
   }); // end on click for #parkCarButton
 
   var displayGarage = function(){
-    console.log( 'in displayGarage:', garage );
+    // console.log( 'in displayGarage:', garage );
+    // loop through the garage and display each car
+    var outputText = '';
+    for (var i = 0; i < garage.length; i++) {
+      outputText += '<p>' + garage[i].year + ' ' +garage[i].make + ' <strong>' + garage[i].model + '</strong></p>';
+      outputText += '<p>' + garage[i].description + '</p>';
+      outputText += '<img src="' + garage[i].imageUrl + '" />';
+    } // end for
+    $( '#outputDiv' ).html( outputText );
   }; // end displayGarage
 }); // end doc ready
