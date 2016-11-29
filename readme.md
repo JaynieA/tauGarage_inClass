@@ -5,7 +5,7 @@ Technologies:
 * jQuery
 * HTML
 
-[] get user input for car
+[x] get user input for car
 
 [] add cars to Garage from user input
 
