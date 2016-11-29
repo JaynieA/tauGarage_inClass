@@ -3,7 +3,7 @@ console.log( 'js' );
 $( document ).ready( function(){
   console.log( 'JQ' );
   // button click event for testButton
-  $( '#testButton' ).on( 'click', function(){
-    console.log( 'button clicked...' );
-  }); // end on click for #testButton
+  $( '#parkCarButton' ).on( 'click', function(){
+    console.log( 'parkCarButton clicked...' );
+  }); // end on click for #parkCarButton
 }); // end doc ready
